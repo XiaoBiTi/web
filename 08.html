@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第八章</title>
+    <link rel="stylesheet" href="08.css">
+</head>
+<body>
+    <h1>div</h1>
+
+    div开始前
+    <div class="d01">
+        d01 样式的div
+    </div>
+    div开始后<br>
+
+    <br><hr><br>
+
+    <div class="d02">
+        给舞台上加入两个角色
+        
+        <div class="d03">
+            <img src="image/1.jpg" alt="">
+        </div>
+        <br>
+        <div class="d04">
+            <img src="image/2.jpeg" alt="">
+        </div>
+        设置绝对定位后，可以用left right，top bottom来设置位置
+        <br>
+        当子元素是绝对定位，会以 相对/绝对/固定定位的父元素作为基准来定位
+        但如果父元素是static默认的div是，会一直往上找，直到 body，
+        以页面的左上作为基准来定位
+    </div>
+    <hr>
+    div开始前的文字......
+    <div class="d05">
+        div中的文字，这里可以用 display 设置其不再是块元素
+    </div>
+    div结束后文字
+    <hr>
+    <div class="d06">
+        <a href="#">首页</a>
+        <a href="#">国内新闻</a>
+        <a href="#">国际新闻</a>
+    </div>
+
+</body>
+</html>

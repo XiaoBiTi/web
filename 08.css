@@ -1,0 +1,74 @@
+body{
+    background: black;
+    color: white;
+}
+.d01{
+    background: orange;
+    /* 给块级元素设置宽和高 */
+    width: 300px;
+    height: 120px;
+    /* div居中用margin的方法 */
+    margin: 0 auto;
+}
+.d02{
+    background: white;
+    color:black;
+    width: 100%;
+    height: 800px;
+
+    transition: all 1s;
+
+    /* 因为我们想让子div自由绝对定位 */
+    /* 所以作为div一般设置或相对定位 */
+    position: relative;
+
+
+}
+.d03{
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    z-index: 1;
+    /* z轴数值，越大越在上层显示 */
+
+}
+.d04{
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    top: 100px;
+    left: 150px;
+}
+.d05{
+    background: orange;
+    width: 300px;
+    height: 60px;
+    /* 默认div是display:block,但可以设置成inline，
+    转换其块元素为行内元素，其宽高不再生效 */
+    display: inline;
+}
+.d06{
+    background: red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.d06 a{
+    color: white;
+    text-decoration: none;
+    /* 行内块元素，使其可以左右排列又能设置宽高 */
+    display: inline-block;
+    width: 100px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+}
+img:hover{
+    transform: scale(1.25);
+}
+div:hover{
+    z-index: 2;
+}
